@@ -27,7 +27,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/pure-ftpd</HostDir>
+      <HostDir>/mnt/user/appdata/pureftpd/etc</HostDir>
       <ContainerDir>/etc/pure-ftpd</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
