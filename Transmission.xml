@@ -14,7 +14,7 @@
   </Description>
   <Registry>https://registry.hub.docker.com/u/netkeion/transmission/</Registry>
   <GitHub>https://github.com/netkeion/docker-transmission</GitHub>
-  <Repository>netkeion/transmission</Repository>
+  <Repository>gfjardim/transmission</Repository>
   <Support>N/A</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
