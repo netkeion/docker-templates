@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>Downloaders:</Category>
+  <Name>Pure-FTPd</Name>
+  <Overview>
+    Pure-FTPd is actively supported, and it was always designed with security in mind, and the code is always re-audited as new kind of vulnerabilities are discussed.
+  </Overview>
+  <Description>
+    Pure-FTPd is actively supported, and it was always designed with security in mind, and the code is always re-audited as new kind of vulnerabilities are discussed.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/netkeion/pureftpd/</Registry>
+  <GitHub>https://github.com/netkeion/docker-containers/tree/master/pureftpd</GitHub>
+  <Repository>netkeion/pureftpd</Repository>
+  <Support>N/A</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>21</HostPort>
+        <ContainerPort>21</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pure-ftpd</HostDir>
+      <ContainerDir>/etc/pure-ftpd</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/appdata/pureftpd/log</HostDir>
+      <ContainerDir>/var/log/pure-ftpd</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/home</HostDir>
+      <ContainerDir>/home</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/ftp</HostDir>
+      <ContainerDir>/home/ftp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/movie</HostDir>
+      <ContainerDir>/home/movie</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>https://www.pureftpd.org/images/pure-ftpd.png</Banner>
+  <Icon>https://www.pureftpd.org/images/pure-ftpd.png</Icon>
+</Container>
