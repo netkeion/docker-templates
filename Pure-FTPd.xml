@@ -37,6 +37,11 @@
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
+      <HostDir>/mnt/user/appdata/pureftpd/ssl</HostDir>
+      <ContainerDir>/etc/ssl/private</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+	<Volume>
       <HostDir>/mnt/user/home</HostDir>
       <ContainerDir>/home</ContainerDir>
       <Mode>rw</Mode>
@@ -53,5 +58,5 @@
     </Volume>
   </Data>
   <Banner>https://www.pureftpd.org/images/pure-ftpd.png</Banner>
-  <Icon>https://www.pureftpd.org/images/pure-ftpd.png</Icon>
+  <Icon>http://i.imgur.com/KHDkwd7.png</Icon>
 </Container>
