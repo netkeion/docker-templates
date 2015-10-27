@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>Downloaders:</Category>
+  <Name>Apache-php</Name>
+  <Overview>
+    The Apache HTTP Server Project is a collaborative software development effort aimed at creating a robust, commercial-grade, featureful, and freely-available source code implementation of an HTTP (Web) server. 
+  </Overview>
+  <Description>
+    The Apache HTTP Server Project is a collaborative software development effort aimed at creating a robust, commercial-grade, featureful, and freely-available source code implementation of an HTTP (Web) server. The project is jointly managed by a group of volunteers located around the world, using the Internet and the Web to communicate, plan, and develop the server and its related documentation. This project is part of the Apache Software Foundation. In addition, hundreds of users have contributed ideas, code, and documentation to the project. This file is intended to briefly describe the history of the Apache HTTP Server and recognize the many contributors.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/netkeion/debian-php/</Registry>
+  <GitHub>https://github.com/netkeion/docker-containers/tree/master/debian-php</GitHub>
+  <Repository>netkeion/debian-php</Repository>
+  <Support>N/A</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/home/www</HostDir>
+      <ContainerDir>/mnt/user/home/www</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/appdata/apache2/site-available</HostDir>
+      <ContainerDir>/etc/apache2/sites-available</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/appdata/apache2/site-enabled</HostDir>
+      <ContainerDir>/etc/apache2/sites-enabled</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/appdata/apache2/log</HostDir>
+      <ContainerDir>/var/log/apache2</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>http://i.imgur.com/3giwI7s.png</Banner>
+  <Icon>http://i.imgur.com/3giwI7s.png</Icon>
+</Container>
