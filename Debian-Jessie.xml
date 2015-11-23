@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>Downloaders:</Category>
+  <Name>Debian-Jessie</Name>
+  <Overview>
+    Debian Jessie
+  </Overview>
+  <Description>
+    Debian Jessie
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/netkeion/debian-jessie/</Registry>
+  <GitHub>https://github.com/netkeion/docker-debian-jessie</GitHub>
+  <Repository>netkeion/debian-jessie</Repository>
+  <Support>N/A</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <WebUI></WebUI>
+  <Banner>https://www.openmodelica.org/images/debian_splash.png</Banner>
+  <Icon>https://www.openmodelica.org/images/debian_splash.png</Icon>
+</Container>
