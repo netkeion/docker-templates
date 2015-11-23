@@ -10,7 +10,7 @@
     Debian Jessie
   </Description>
   <Registry>https://registry.hub.docker.com/u/netkeion/debian-jessie/</Registry>
-  <GitHub>https://github.com/netkeion/docker-debian-jessie</GitHub>
+  <GitHub>https://github.com/netkeion/docker-containers/tree/master/debian-jessie</GitHub>
   <Repository>netkeion/debian-jessie</Repository>
   <Support>N/A</Support>
   <BindTime>true</BindTime>
